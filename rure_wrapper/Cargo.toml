@@ -1,0 +1,16 @@
+[package]
+name = "rure-wrapper"
+version = "0.0.1"
+authors = ["David Blewett <david@dawninglight.net>"]
+
+[lib]
+name = "rure_wrap"
+#crate-type = ["cdylib"]
+#crate-type = ["dylib", "rlib"]
+#crate-type = ["staticlib"]
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+libc = "^0.2.16"
+rure = "^0.1.1"
+#rure = {version = "^0.1.1", path = "/home/dblewett/src/regex/regex-capi"}
